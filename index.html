@@ -67,6 +67,13 @@
 <body>
 
     <div id="bottomToTopScroll"></div>
+    <a href="https://wa.me/919999999999?text=Hi%20Grow%20Commerce%2C%20I%20want%20a%20free%20consultation."
+        target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+        class="fixed bottom-5 right-5 z-[80] inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#25D366]/40">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span class="hidden sm:inline">WhatsApp</span>
+    </a>
+
 
 
     <main>
@@ -83,7 +90,8 @@
             <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="grid items-center gap-12 py-16 md:grid-cols-2 md:py-20">
                     <div class="md:text-start text-center">
-                        <div class="mb-6 flex md:justify-start justify-center items-center gap-3" data-aos="zoom-in" data-aos-duration="700">
+                        <div class="mb-6 flex md:justify-start justify-center items-center gap-3" data-aos="zoom-in"
+                            data-aos-duration="700">
                             <span
                                 class="inline-flex items-center rounded-full border border-[#55c624]/25 bg-[#55c624]/10 px-3 py-1 text-xs font-semibold text-[#545454]">
                                 Global E-commerce Expansion
@@ -117,8 +125,8 @@
                             </a>
                         </div>
 
-                        <div class="mt-8 md:flex hidden flex-wrap items-center gap-3 text-sm text-[#545454]/80" data-aos="fade"
-                            data-aos-duration="800" data-aos-delay="320">
+                        <div class="mt-8 md:flex hidden flex-wrap items-center gap-3 text-sm text-[#545454]/80"
+                            data-aos="fade" data-aos-duration="800" data-aos-delay="320">
                             <span
                                 class="inline-flex items-center gap-2 rounded-xl border border-[#545454]/10 bg-white px-4 py-2">
                                 <i class="fa-solid fa-user-check text-[#55c624]"></i>
@@ -1445,22 +1453,35 @@
                                     </span>
                                 </div>
 
-                                <form class="mt-6 grid gap-4">
+                                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST"
+                                    class="mt-6 grid gap-4">
+                                    <input type="hidden" name="access_key"
+                                        value="07353104-1f37-4618-8f62-bf76f3a1ebe1" />
+                                    <input type="hidden" name="subject"
+                                        value="New Consultation Request - Grow Commerce" />
+                                    <input type="hidden" name="from_name" value="Grow Commerce Website" />
+                                    <input type="hidden" name="replyto" value="" />
+                                    <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
+
+                                    <div id="formAlert" class="hidden rounded-2xl border p-4 text-sm"></div>
+
                                     <div>
                                         <label class="text-xs font-bold text-[#545454]" for="name">Full Name</label>
-                                        <input id="name" type="text" placeholder="Your name"
+                                        <input id="name" name="name" type="text" placeholder="Your name" required
                                             class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                     </div>
 
                                     <div class="grid gap-4 sm:grid-cols-2">
                                         <div>
                                             <label class="text-xs font-bold text-[#545454]" for="email">Email</label>
-                                            <input id="email" type="email" placeholder="name@company.com"
+                                            <input id="email" name="email" type="email" placeholder="name@company.com"
+                                                required
                                                 class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                         </div>
+
                                         <div>
                                             <label class="text-xs font-bold text-[#545454]" for="phone">Phone</label>
-                                            <input id="phone" type="text" placeholder="+91 XXXXX XXXXX"
+                                            <input id="phone" name="phone" type="text" placeholder="+91 XXXXX XXXXX"
                                                 class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                         </div>
                                     </div>
@@ -1468,32 +1489,102 @@
                                     <div>
                                         <label class="text-xs font-bold text-[#545454]" for="marketplace">Marketplace
                                             interest</label>
-                                        <select id="marketplace"
+                                        <select id="marketplace" name="marketplace_interest"
                                             class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
-                                            <option>Amazon Global Selling</option>
-                                            <option>Walmart Marketplace</option>
-                                            <option>eBay</option>
-                                            <option>Joom</option>
-                                            <option>Not sure yet</option>
+                                            <option value="Amazon Global Selling">Amazon Global Selling</option>
+                                            <option value="Walmart Marketplace">Walmart Marketplace</option>
+                                            <option value="eBay">eBay</option>
+                                            <option value="Joom">Joom</option>
+                                            <option value="Not sure yet">Not sure yet</option>
                                         </select>
                                     </div>
 
                                     <div>
                                         <label class="text-xs font-bold text-[#545454]" for="message">Message</label>
-                                        <textarea id="message" rows="4"
-                                            placeholder="Tell us about your products and goals"
+                                        <textarea id="message" name="message" rows="4"
+                                            placeholder="Tell us about your products and goals" required
                                             class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20"></textarea>
                                     </div>
 
-                                    <button type="button"
-                                        class="inline-flex w-full items-center justify-center rounded-xl bg-[#55c624] px-6 py-1.5 text-sm font-bold text-white shadow-sm transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[#55c624]/40">
-                                        Submit Request
-                                        <div
-                                            class="ml-2 grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/15">
-                                            <i class="fa-solid fa-paper-plane text-white"></i>
-                                        </div>
+                                    <button id="submitBtn" type="submit"
+                                        class="inline-flex w-full items-center justify-center rounded-xl bg-[#55c624] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[#55c624]/40 disabled:cursor-not-allowed disabled:opacity-70">
+                                        <span id="btnText">Submit Request</span>
+                                        <i class="fa-solid fa-paper-plane ml-2 text-white"></i>
                                     </button>
                                 </form>
+
+                                <script>
+                                    (function () {
+                                        var form = document.getElementById("contactForm");
+                                        var alertBox = document.getElementById("formAlert");
+                                        var submitBtn = document.getElementById("submitBtn");
+                                        var btnText = document.getElementById("btnText");
+                                        var emailInput = document.getElementById("email");
+                                        var replytoHidden = form ? form.querySelector('input[name="replyto"]') : null;
+
+                                        function showAlert(type, title, message) {
+                                            if (!alertBox) return;
+                                            alertBox.classList.remove("hidden");
+                                            alertBox.className = "rounded-2xl border p-4 text-sm";
+                                            if (type === "success") {
+                                                alertBox.classList.add("border-[#55c624]/30", "bg-[#55c624]/10", "text-[#545454]");
+                                            } else {
+                                                alertBox.classList.add("border-red-200", "bg-red-50", "text-red-700");
+                                            }
+                                            alertBox.innerHTML = '<div class="font-bold">' + title + '</div><div class="mt-1">' + message + "</div>";
+                                        }
+
+                                        function setLoading(isLoading) {
+                                            if (!submitBtn || !btnText) return;
+                                            submitBtn.disabled = isLoading;
+                                            btnText.textContent = isLoading ? "Sending..." : "Submit Request";
+                                        }
+
+                                        if (!form) return;
+
+                                        if (emailInput && replytoHidden) {
+                                            replytoHidden.value = emailInput.value || "";
+                                            emailInput.addEventListener("input", function () {
+                                                replytoHidden.value = emailInput.value || "";
+                                            });
+                                        }
+
+                                        form.addEventListener("submit", function (e) {
+                                            e.preventDefault();
+
+                                            setLoading(true);
+                                            if (alertBox) alertBox.classList.add("hidden");
+
+                                            var formData = new FormData(form);
+
+                                            fetch(form.action, {
+                                                method: "POST",
+                                                body: formData,
+                                                headers: { Accept: "application/json" },
+                                            })
+                                                .then(function (res) {
+                                                    if (!res.ok) throw new Error("Request failed");
+                                                    return res.json();
+                                                })
+                                                .then(function (data) {
+                                                    if (data && data.success) {
+                                                        showAlert("success", "Submitted successfully", "Thanks! We’ll contact you soon to schedule your consultation.");
+                                                        form.reset();
+                                                        if (replytoHidden) replytoHidden.value = "";
+                                                    } else {
+                                                        showAlert("error", "Submission failed", "Please try again in a moment.");
+                                                    }
+                                                })
+                                                .catch(function () {
+                                                    showAlert("error", "Submission failed", "Please check your internet and try again.");
+                                                })
+                                                .finally(function () {
+                                                    setLoading(false);
+                                                });
+                                        });
+                                    })();
+                                </script>
+
                             </div>
                         </div>
                     </div>
@@ -1732,7 +1823,8 @@
                         <a href="contact.html"
                             class="inline-flex items-center justify-center rounded-xl bg-[#55c624] pl-3 pr-1 md:py-1 py-3 text-sm font-bold text-white shadow-sm transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-white/30">
                             Book Free 30-Min Call
-                            <div class="ml-2 md:grid hidden h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/15">
+                            <div
+                                class="ml-2 md:grid hidden h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/15">
                                 <i class="fa-solid fa-arrow-right text-white"></i>
                             </div>
                         </a>
@@ -1740,7 +1832,8 @@
                         <a href="services.html"
                             class="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/10 pl-3 pr-1 md:py-1 py-3 text-sm font-bold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/25">
                             Explore Services
-                            <div class="ml-2 md:grid hidden h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
+                            <div
+                                class="ml-2 md:grid hidden h-10 w-10 shrink-0 place-items-center rounded-xl bg-white/10">
                                 <i class="fa-solid fa-compass text-white"></i>
                             </div>
                         </a>

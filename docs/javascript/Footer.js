@@ -6,9 +6,13 @@ footer.innerHTML = `
       <div class="grid gap-10 lg:grid-cols-12">
         <div class="lg:col-span-4">
           <div class="flex items-center gap-3">
-            <a href="index.html" class="inline-flex items-center gap-3 shrink-0">
-            <img src="/docs/assets/logo.png" class="md:h-12 h-10" alt="logo">
-            </a>
+            <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
+              <i class="fa-solid fa-globe"></i>
+            </span>
+            <div>
+              <p class="text-lg font-bold text-[#545454]">Grow Commerce</p>
+              <p class="text-sm text-[#545454]/70">Empowering Indian Brands to Go Global</p>
+            </div>
           </div>
 
           <p class="mt-4 text-sm leading-relaxed text-[#545454]/80">
@@ -136,10 +140,16 @@ footer.innerHTML = `
     </div>
 
     <div class="border-t border-[#545454]/10 py-6">
-      <div class="flex items-center justify-center text-center">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p class="text-sm text-[#545454]/80">
           © <span id="yearNow"></span> Grow Commerce. All rights reserved.
         </p>
+
+        <div class="flex flex-wrap items-center gap-4 text-sm">
+          <a class="text-[#545454]/80 transition hover:text-[#55c624]" href="#">Privacy Policy</a>
+          <a class="text-[#545454]/80 transition hover:text-[#55c624]" href="#">Terms</a>
+          <a class="text-[#545454]/80 transition hover:text-[#55c624]" href="#">Refund Policy</a>
+        </div>
       </div>
     </div>
   </div>
