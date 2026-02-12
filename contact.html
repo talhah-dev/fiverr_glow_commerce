@@ -40,7 +40,7 @@
       "name": "Grow Commerce",
       "url": "https://your-domain.com/",
       "logo": "https://your-domain.com/assets/img/logo.png",
-      "email": "hello@growcommerce.com",
+      "email": "support@growcommerce.in",
       "sameAs": [
         "https://www.linkedin.com/",
         "https://www.instagram.com/",
@@ -173,7 +173,7 @@
                                     </div>
                                 </a>
 
-                                <a href="mailto:hello@growcommerce.com"
+                                <a href="mailto:support@growcommerce.in"
                                     class="inline-flex items-center justify-center rounded-xl border border-[#55c624]/40 bg-white pl-4 pr-1 py-1 text-sm font-bold text-[#545454] transition hover:bg-[#55c624]/10 focus:outline-none focus:ring-2 focus:ring-[#55c624]/30">
                                     Email Us
                                     <div
@@ -210,13 +210,13 @@
                                     +91 00000 00000
                                 </a>
 
-                                <a href="mailto:hello@growcommerce.com"
+                                <a href="mailto:support@growcommerce.in"
                                     class="flex items-center gap-3 rounded-2xl border border-[#545454]/10 bg-[#f7f9fb] px-4 py-3 text-sm font-bold text-[#545454] transition hover:bg-white">
                                     <div
                                         class="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white shadow-sm">
                                         <i class="fa-solid fa-envelope text-[#55c624]"></i>
                                     </div>
-                                    hello@growcommerce.com
+                                    support@growcommerce.in
                                 </a>
 
                                 <div
@@ -349,99 +349,109 @@
 
                         <div class="rounded-2xl border border-[#545454]/10 bg-white p-6 shadow-sm sm:p-8"
                             data-aos="zoom-in-up" data-aos-duration="900">
-                            <form id="consultForm" action="https://api.web3forms.com/submit" method="POST"
+
+                            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST"
                                 class="grid gap-4">
                                 <input type="hidden" name="access_key" value="78cb231a-b69a-4905-94ea-e5b9eafee426" />
                                 <input type="hidden" name="subject" value="New Consultation Request - Grow Commerce" />
                                 <input type="hidden" name="from_name" value="Grow Commerce Website" />
                                 <input type="hidden" name="replyto" value="" />
-                                <input type="hidden" name="form_name" value="Consultation Form" />
                                 <input type="checkbox" name="botcheck" class="hidden" style="display:none;" />
 
-                                <div id="consultAlert" class="hidden rounded-2xl border p-4 text-sm"></div>
-
-                                <div>
-                                    <label class="text-xs font-bold text-[#545454]" for="fullName">Full Name</label>
-                                    <input id="fullName" name="name" type="text" placeholder="Your name" required
-                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
-                                </div>
+                                <div id="formAlert" class="hidden rounded-2xl border p-4 text-sm"></div>
 
                                 <div class="grid gap-4 sm:grid-cols-2">
                                     <div>
-                                        <label class="text-xs font-bold text-[#545454]" for="email">Email</label>
-                                        <input id="email" name="email" type="email" placeholder="name@company.com"
+                                        <label class="text-xs font-bold text-[#545454]" for="full_name">Full
+                                            Name</label>
+                                        <input id="full_name" name="name" type="text" placeholder="Your full name"
                                             required
                                             class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                     </div>
 
                                     <div>
-                                        <label class="text-xs font-bold text-[#545454]" for="phone">Phone /
-                                            WhatsApp</label>
-                                        <input id="phone" name="phone" type="text" placeholder="+91 XXXXX XXXXX"
+                                        <label class="text-xs font-bold text-[#545454]" for="company_name">Company
+                                            Name</label>
+                                        <input id="company_name" name="company_name" type="text"
+                                            placeholder="Your company name" required
                                             class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                     </div>
                                 </div>
 
                                 <div class="grid gap-4 sm:grid-cols-2">
                                     <div>
-                                        <label class="text-xs font-bold text-[#545454]" for="marketplace">Marketplace
-                                            interest</label>
-                                        <select id="marketplace" name="marketplace_interest"
-                                            class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
-                                            <option value="Amazon Global Selling">Amazon Global Selling</option>
-                                            <option value="Walmart Marketplace">Walmart Marketplace</option>
-                                            <option value="eBay">eBay</option>
-                                            <option value="Joom">Joom</option>
-                                            <option value="Not sure yet">Not sure yet</option>
-                                        </select>
+                                        <label class="text-xs font-bold text-[#545454]" for="phone">Phone / WhatsApp
+                                            Number</label>
+                                        <input id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" required
+                                            class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                     </div>
 
                                     <div>
-                                        <label class="text-xs font-bold text-[#545454]" for="businessType">Business
-                                            type</label>
-                                        <select id="businessType" name="business_type"
-                                            class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
-                                            <option value="Brand">Brand</option>
-                                            <option value="Manufacturer">Manufacturer</option>
-                                            <option value="Seller">Seller</option>
-                                            <option value="Not sure">Not sure</option>
-                                        </select>
+                                        <label class="text-xs font-bold text-[#545454]" for="email">Email
+                                            Address</label>
+                                        <input id="email" name="email" type="email" placeholder="name@company.com"
+                                            required
+                                            class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label class="text-xs font-bold text-[#545454]" for="category">Product
-                                        category</label>
-                                    <input id="category" name="product_category" type="text"
-                                        placeholder="e.g., Home & Kitchen, Beauty, Electronics"
-                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20" />
+                                    <label class="text-xs font-bold text-[#545454]" for="sell_category">What do you
+                                        sell?</label>
+                                    <select id="sell_category" name="what_do_you_sell" required
+                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
+                                        <option value="" disabled selected>Select a category</option>
+                                        <option value="Jewelry">Jewelry</option>
+                                        <option value="Organic / Food Products">Organic / Food Products</option>
+                                        <option value="Textiles / Apparel">Textiles / Apparel</option>
+                                        <option value="Handicrafts">Handicrafts</option>
+                                        <option value="Supplements">Supplements</option>
+                                        <option value="Electronics">Electronics</option>
+                                        <option value="Home & Kitchen">Home & Kitchen</option>
+                                        <option value="Other">Other</option>
+                                    </select>
                                 </div>
 
                                 <div>
-                                    <label class="text-xs font-bold text-[#545454]" for="message">Message</label>
-                                    <textarea id="message" name="message" rows="5"
-                                        placeholder="Tell us about your products, current sales channel, and goals"
-                                        required
-                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20"></textarea>
+                                    <label class="text-xs font-bold text-[#545454]" for="marketplace">Which Marketplace
+                                        Are You Interested In?</label>
+                                    <select id="marketplace" name="marketplace_interest" required
+                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
+                                        <option value="" disabled selected>Select a marketplace</option>
+                                        <option value="Amazon">Amazon</option>
+                                        <option value="Walmart">Walmart</option>
+                                        <option value="eBay">eBay</option>
+                                        <option value="Joom">Joom</option>
+                                        <option value="Not Sure (Need Guidance)">Not Sure (Need Guidance)</option>
+                                    </select>
                                 </div>
 
-                                <button id="consultSubmitBtn" type="submit"
+                                <div>
+                                    <label class="text-xs font-bold text-[#545454]" for="selling_status">Current Selling
+                                        Status</label>
+                                    <select id="selling_status" name="current_selling_status" required
+                                        class="mt-2 w-full rounded-xl border border-[#545454]/15 bg-white px-4 py-3 text-sm text-[#545454] outline-none transition focus:border-[#55c624]/60 focus:ring-2 focus:ring-[#55c624]/20">
+                                        <option value="" disabled selected>Select your status</option>
+                                        <option value="Not Selling Yet">Not Selling Yet</option>
+                                        <option value="Selling in India Only">Selling in India Only</option>
+                                        <option value="Already Selling Internationally">Already Selling Internationally
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <button id="submitBtn" type="submit"
                                     class="inline-flex w-full items-center justify-center rounded-xl bg-[#55c624] px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-[#55c624]/40 disabled:cursor-not-allowed disabled:opacity-70">
-                                    <span id="consultBtnText">Submit Request</span>
+                                    <span id="btnText">Submit Request</span>
                                     <i class="fa-solid fa-paper-plane ml-2 text-white"></i>
                                 </button>
-
-                                <p class="text-center text-xs text-[#545454]/70">
-                                    By submitting, you agree to be contacted by Grow Commerce.
-                                </p>
                             </form>
 
                             <script>
                                 (function () {
-                                    var form = document.getElementById("consultForm");
-                                    var alertBox = document.getElementById("consultAlert");
-                                    var submitBtn = document.getElementById("consultSubmitBtn");
-                                    var btnText = document.getElementById("consultBtnText");
+                                    var form = document.getElementById("contactForm");
+                                    var alertBox = document.getElementById("formAlert");
+                                    var submitBtn = document.getElementById("submitBtn");
+                                    var btnText = document.getElementById("btnText");
                                     var emailInput = document.getElementById("email");
                                     var replytoHidden = form ? form.querySelector('input[name="replyto"]') : null;
 
@@ -507,6 +517,7 @@
                                     });
                                 })();
                             </script>
+
 
                         </div>
                     </div>
@@ -574,9 +585,9 @@
                                         </div>
                                         <div>
                                             <div class="text-xs text-[#545454]/70">Email</div>
-                                            <a href="mailto:hello@growcommerce.com"
+                                            <a href="mailto:support@growcommerce.in"
                                                 class="text-sm font-bold text-[#545454] transition hover:text-[#55c624]">
-                                                hello@growcommerce.com
+                                                support@growcommerce.in
                                             </a>
                                         </div>
                                     </div>

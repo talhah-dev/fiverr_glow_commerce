@@ -103,7 +103,7 @@ footer.innerHTML = `
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
                     <i class="fa-solid fa-envelope"></i>
                   </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="mailto:hello@growcommerce.com">hello@growcommerce.com</a>
+                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="mailto:support@growcommerce.in">support@growcommerce.in</a>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
