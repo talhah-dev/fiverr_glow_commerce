@@ -109,7 +109,7 @@ footer.innerHTML = `
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
                     <i class="fa-solid fa-phone"></i>
                   </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+910000000000">+91 00000 00000</a>
+                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+9929995932">+9929995932</a>
                 </li>
                 <li class="flex items-start gap-3">
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
@@ -131,7 +131,7 @@ footer.innerHTML = `
             <div class="overflow-hidden rounded-2xl border border-[#545454]/10 bg-[#f7f9fb]">
               <iframe
                 title="Grow Commerce Office Location"
-                src="https://www.google.com/maps?q=Grow%20Commerce&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46265.26092668631!2d75.73866955492547!3d26.90876623039344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db568c52685c9%3A0x3c73d8501d9092bb!2sGrow%20commerce%20%7C%20Global%20E-commerce%20Services!5e0!3m2!1sen!2s!4v1771641906000!5m2!1sen!2s"
                 class="h-full w-full"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -141,9 +141,7 @@ footer.innerHTML = `
             <div class="rounded-2xl border border-[#545454]/10 bg-white p-6">
               <p class="text-sm font-bold text-[#545454]">Office Address</p>
               <p class="mt-3 text-sm leading-relaxed text-[#545454]/80">
-                Grow Commerce<br />
-                Full Address Line 1, Area/Locality<br />
-                City, State, PIN Code<br />
+                Grow commerce | Global E-commerce Services, Grow Commerce, 46, near Vijay Dwar, Guru Jhambeshwar Nagar A, Vaishali Nagar, Jaipur, Rajasthan 302021<br />
                 India
               </p>
 
@@ -152,7 +150,7 @@ footer.innerHTML = `
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
                     <i class="fa-solid fa-phone"></i>
                   </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+910000000000">+91 00000 00000</a>
+                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+9929995932">+9929995932</a>
                 </div>
                 <div class="flex items-start gap-3">
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
