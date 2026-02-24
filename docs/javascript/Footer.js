@@ -50,7 +50,7 @@ footer.innerHTML = `
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a
-              href="https://www.facebook.com/people/Grow-Commerce/"
+              href="https://www.facebook.com/people/Grow-Commerce/61563375841105/"
               target="_blank"
               rel="noopener"
               class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#545454]/10 bg-white text-[#545454] shadow-sm transition hover:bg-[#f7f9fb]"
@@ -71,7 +71,7 @@ footer.innerHTML = `
         </div>
 
         <div class="lg:col-span-8">
-          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 grid-cols-1">
             <div>
               <p class="text-sm font-bold text-[#545454]">Quick Links</p>
               <ul class="mt-4 space-y-3 text-sm">
@@ -102,29 +102,7 @@ footer.innerHTML = `
               </ul>
             </div>
 
-            <div>
-              <p class="text-sm font-bold text-[#545454]">Contact</p>
-              <ul class="mt-4 space-y-3 text-sm text-[#545454]/80">
-                <li class="flex items-start gap-3">
-                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
-                    <i class="fa-solid fa-phone"></i>
-                  </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+9929995932">+9929995932</a>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
-                    <i class="fa-solid fa-envelope"></i>
-                  </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="mailto:support@growcommerce.in">support@growcommerce.in</a>
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </span>
-                  <span class="mt-2 inline-block">India</span>
-                </li>
-              </ul>
-            </div>
+            
           </div>
 
           <div class="mt-10 grid gap-6 lg:grid-cols-2">
@@ -150,7 +128,7 @@ footer.innerHTML = `
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
                     <i class="fa-solid fa-phone"></i>
                   </span>
-                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+9929995932">+9929995932</a>
+                  <a class="mt-2 inline-block transition hover:text-[#55c624]" href="tel:+9929995932">+91-9929995932</a>
                 </div>
                 <div class="flex items-start gap-3">
                   <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#55c624]/10 text-[#55c624]">
