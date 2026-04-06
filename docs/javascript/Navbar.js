@@ -32,7 +32,7 @@ navbar.innerHTML = `
 
                   <a class="mt-1 flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-[#545454] hover:bg-[#f7f9fb] transition" href="amazon-global-selling.html">
                     <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#55c624]/10 text-[#55c624]">
-                      <i class="fa-brands fa -amazon"></i>
+                      <i class="fa-solid fa-globe"></i>
                     </span>
                     Amazon Global Selling
                   </a>
@@ -124,7 +124,7 @@ navbar.innerHTML = `
           </a></li>
 
           <li><a class="flex items-center gap-3 rounded-2xl px-4 py-3 text-sm font-semibold text-[#545454] ring-1 ring-[#545454]/10 hover:bg-[#f7f9fb] transition" href="amazon-global-selling.html">
-            <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#55c624]/10 text-[#55c624]"><i class="fa-brands fa-amazon"></i></span>
+            <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#55c624]/10 text-[#55c624]"><i class="fa-solid fa-globe"></i></span>
             Amazon Global Selling
           </a></li>
 
